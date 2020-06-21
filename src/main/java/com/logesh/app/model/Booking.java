@@ -23,14 +23,18 @@ public class Booking {
 	private String emailid;
 	private String usertype;
 	private String address;
-	private Integer mobilenumber;
+	private String city;
+	private String state;
+	private String country; 
+	private Long mobilenumber;
+	private Integer otp;
 	
 	public Booking() {
 		// TODO Auto-generated constructor stub
 	}
 
 	public Booking(Integer id, String firstname, String lastname, String emailid, String usertype, String address,
-			Integer mobilenumber) {
+			String city, String state, String country, Long mobilenumber, Integer otp) {
 		super();
 		this.id = id;
 		this.firstname = firstname;
@@ -38,7 +42,11 @@ public class Booking {
 		this.emailid = emailid;
 		this.usertype = usertype;
 		this.address = address;
+		this.city = city;
+		this.state = state;
+		this.country = country;
 		this.mobilenumber = mobilenumber;
+		this.otp = otp;
 	}
 
 	public Integer getId() {
@@ -89,18 +97,51 @@ public class Booking {
 		this.address = address;
 	}
 
-	public Integer getMobilenumber() {
+	public String getCity() {
+		return city;
+	}
+
+	public void setCity(String city) {
+		this.city = city;
+	}
+
+	public String getState() {
+		return state;
+	}
+
+	public void setState(String state) {
+		this.state = state;
+	}
+
+	public String getCountry() {
+		return country;
+	}
+
+	public void setCountry(String country) {
+		this.country = country;
+	}
+
+	public Long getMobilenumber() {
 		return mobilenumber;
 	}
 
-	public void setMobilenumber(Integer mobilenumber) {
+	public void setMobilenumber(Long mobilenumber) {
 		this.mobilenumber = mobilenumber;
+	}
+
+	public Integer getOtp() {
+		return otp;
+	}
+
+	public void setOtp(Integer otp) {
+		this.otp = otp;
 	}
 
 	@Override
 	public String toString() {
-		return "User [id=" + id + ", firstname=" + firstname + ", lastname=" + lastname + ", emailid=" + emailid
-				+ ", usertype=" + usertype + ", address=" + address + ", mobilenumber=" + mobilenumber + "]";
+		return "Booking [id=" + id + ", firstname=" + firstname + ", lastname=" + lastname + ", emailid=" + emailid
+				+ ", usertype=" + usertype + ", address=" + address + ", city=" + city + ", state=" + state
+				+ ", country=" + country + ", mobilenumber=" + mobilenumber + ", otp=" + otp + "]";
 	}
 	
 }

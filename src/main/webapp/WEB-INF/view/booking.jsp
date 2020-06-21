@@ -14,11 +14,13 @@
 <br>
 <form action="addbooking" method="post">
 
-Enter the Name: <input type="text" name="accountantname" id="accountantid"> <br><br>
+Enter the First Name: <input type="text" name="firstname" id="firstname"> <br><br>
 
-Enter the Email: <input type="text" name="email" id="email"> <br><br>
+Enter the Last Name: <input type="text" name="lastname" id="lastname"> <br><br>
 
-Enter the User Type: <input type="text" name="course" id="course"> <br><br>
+Enter the Email: <input type="text" name="emailid" id="emailid"> <br><br>
+
+Enter the User Type: <input type="text" name="usertype" id="usertype"> <br><br>
 
 Enter the Address: <input type="text" name="address" id="address"> <br><br>
 
@@ -28,11 +30,11 @@ Enter the State: <input type="text" name="state" id="state"> <br><br>
 
 Enter the Country: <input type="text" name="country" id="country"> <br><br>
 
-Enter the Contact-No: <input type="text" name="contact_no" id="contact_no"> <br><br>
+Enter the Contact-No: <input type="text" name=mobilenumber id="mobilenumber"> <br><br>
 
-Enter the OTP: <input type="text" name="otp" id="ottp"> <br><br>
+Enter the OTP: <input type="text" name="otp" id="otp"> <br><br>
 
-<a href="add">Confirm</a> 
+<input type = "submit" value = "Confirm">
 
 </form>
 
